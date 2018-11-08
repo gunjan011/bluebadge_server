@@ -18,6 +18,6 @@ app.use('/api/login', login);
 app.use(require('./middleware/validate-session'));
 app.use('/api/log', log);
 
-app.listen(3002, function() {
-    console.log('Hello.')
+app.listen(process.env.PORT,  () =>  {
+    console.log(`server is listening on port ${process.env.PORT}`)
 });
