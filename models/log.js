@@ -1,14 +1,12 @@
 module.exports = function (sequelize, DataTypes) {
     const Log = sequelize.define('log', {
-      poemId: {
-            type: DataTypes.STRING,
+      ownerId: {
+            type: DataTypes.INTEGER,
             allownull: false,
-            unique: true
         },
         caption: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true
         },
         compose: {
             type: DataTypes.STRING,
